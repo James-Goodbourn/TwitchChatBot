@@ -1,0 +1,22 @@
+C:\Users\james.goodbourn\Documents\Visual Studio 2013\Projects\TwitchChatReader\bin\Debug\TwitchChatReader.exe.config
+C:\Users\james.goodbourn\Documents\Visual Studio 2013\Projects\TwitchChatReader\bin\Debug\TwitchChatReader.exe
+C:\Users\james.goodbourn\Documents\Visual Studio 2013\Projects\TwitchChatReader\bin\Debug\TwitchChatReader.pdb
+C:\Users\james.goodbourn\Documents\Visual Studio 2013\Projects\TwitchChatReader\obj\Debug\TwitchChatReader.csprojResolveAssemblyReference.cache
+C:\Users\james.goodbourn\Documents\Visual Studio 2013\Projects\TwitchChatReader\obj\Debug\TwitchChatReader.exe
+C:\Users\james.goodbourn\Documents\Visual Studio 2013\Projects\TwitchChatReader\obj\Debug\TwitchChatReader.pdb
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\bin\Debug\TwitchChatReader.exe.config
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\obj\Debug\TwitchChatReader.exe
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\obj\Debug\TwitchChatReader.pdb
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\bin\Debug\TwitchChatReader.exe
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\bin\Debug\TwitchChatReader.pdb
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\obj\Debug\TwitchChatReader.csprojResolveAssemblyReference.cache
+C:\Users\James\Dropbox\RPG\TwitchChatReader\bin\Debug\TwitchChatReader.exe.config
+C:\Users\James\Dropbox\RPG\TwitchChatReader\obj\Debug\TwitchChatReader.exe
+C:\Users\James\Dropbox\RPG\TwitchChatReader\obj\Debug\TwitchChatReader.pdb
+C:\Users\James\Dropbox\RPG\TwitchChatReader\bin\Debug\TwitchChatReader.exe
+C:\Users\James\Dropbox\RPG\TwitchChatReader\bin\Debug\TwitchChatReader.pdb
+C:\Users\James\Dropbox\RPG\TwitchChatReader\obj\Debug\TwitchChatReader.csprojResolveAssemblyReference.cache
+C:\Users\James\Dropbox\RPG\TwitchChatReader\bin\Debug\WindowsInput.dll
+C:\Users\James\Dropbox\RPG\TwitchChatReader\bin\Debug\WindowsInput.xml
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\bin\Debug\WindowsInput.dll
+C:\Users\james.goodbourn\Dropbox\RPG\TwitchChatReader\bin\Debug\WindowsInput.xml
