@@ -37,51 +37,66 @@ namespace TwitchChatReader
                     string message = irc.readMessage();
                     if (!HasInput)
                     {
-                        if (message != null)
+                        HasInput = true;
+                        var messages = message.Split(' ');
+                        Task.Run(() =>
                         {
                             Console.WriteLine(message);
-                            if (message.ToLower() == "up")
+                            var index = 0;
+                            foreach (var item in messages)
                             {
-                                ProcessInput(VirtualKeyCode.VK_W);
-                            }
-                            if (message.ToLower() == "down")
-                            {
-                                ProcessInput(VirtualKeyCode.VK_S);
-                            }
-                            if (message.ToLower() == "left")
-                            {
-                                ProcessInput(VirtualKeyCode.VK_A);
-                            }
-                            if (message.ToLower() == "right")
-                            {
-                                ProcessInput(VirtualKeyCode.VK_D);
-                            }
-                            if (message.ToLower() == "a")
-                            {
-                                ProcessInput(VirtualKeyCode.VK_E);
-                            }
-                            if (message.ToLower() == "b")
-                            {
-                                ProcessInput(VirtualKeyCode.BACK);
-                            }
-                            if (message.ToLower() == "start")
-                            {
-                                ProcessInput(VirtualKeyCode.RETURN);
-                            }
-                            if (message.ToLower() == "lb")
-                            {
-                                ProcessInput(VirtualKeyCode.LEFT);
-                            }
-                            if (message.ToLower() == "rb")
-                            {
-                                ProcessInput(VirtualKeyCode.RIGHT);
-                            }
+                                if (!string.IsNullOrEmpty(item))
+                                {
+                                    if (item.ToLower() == "up")
+                                    {
+                                        ProcessInput(VirtualKeyCode.VK_W);
+                                    }
+                                    if (item.ToLower() == "down")
+                                    {
+                                        ProcessInput(VirtualKeyCode.VK_S);
+                                    }
+                                    if (item.ToLower() == "left")
+                                    {
+                                        ProcessInput(VirtualKeyCode.VK_A);
+                                    }
+                                    if (item.ToLower() == "right")
+                                    {
+                                        ProcessInput(VirtualKeyCode.VK_D);
+                                    }
+                                    if (item.ToLower() == "a")
+                                    {
+                                        ProcessInput(VirtualKeyCode.VK_E);
+                                    }
+                                    if (item.ToLower() == "b")
+                                    {
+                                        ProcessInput(VirtualKeyCode.BACK);
+                                    }
+                                    if (item.ToLower() == "start")
+                                    {
+                                        ProcessInput(VirtualKeyCode.RETURN);
+                                    }
+                                    if (item.ToLower() == "lb")
+                                    {
+                                        ProcessInput(VirtualKeyCode.LEFT);
+                                    }
+                                    if (item.ToLower() == "rb")
+                                    {
+                                        ProcessInput(VirtualKeyCode.RIGHT);
+                                    }
 
-                            if (message.ToLower() == "!cmd")
-                            {
-                                irc.SendChatMessage("left, right, up ,down, b, a, lb, rb, start");
+                                    if (item.ToLower() == "!cmd")
+                                    {
+                                        irc.SendChatMessage("left, right, up ,down, b, a, lb, rb, start");
+                                    }
+                                    System.Threading.Thread.Sleep(500);
+                                    index++;
+                                    if(index >= messages.Length)
+                                    {
+                                        HasInput = false;
+                                    }
+                                }
                             }
-                        }
+                        });
                     }
                 }
                 catch
@@ -109,7 +124,6 @@ namespace TwitchChatReader
                 {
                     System.Threading.Thread.Sleep(100);
                     x.Keyboard.KeyUp(Key);
-                    HasInput = false;
                 }).Start();
             }
         }
